@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +11,11 @@
 <body class="body">
 <div class="page">
   <header class="header">
-    <a href="#" class="header__logo"></a>
-    <a href="#" class="header__lang-link header__lang-link_active">Ru</a>
-    <a href="#" class="header__lang-link">En</a>
+    <a href="#" class="header__logo link" target="_self" rel="noopener"></a>
+    <nav class="header__lang">
+    <a href="#" class="header__lang-link header__lang-link_active link" target="_self" rel="noopener">Ru</a>
+    <a href="#" class="header__lang-link link" target="_self" rel="noopener">En</a>
+    </nav>
   </header>
   <main>
     <section class="lead">
@@ -29,7 +31,7 @@
     </section>
 
     <section class="intro">
-      <h1 class="intro__title">Чего мы там не видели?</h1>
+      <h2 class="intro__title">Чего мы там не видели?</h2>
       <article class="intro__text">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только 36% планируют
         провести отпуск в родной стране. Мол, чего мы тут, дома, не видели? На самом деле, Россия — это целая вселенная
         с
@@ -45,23 +47,24 @@
         <li>Объектов природного наследия ЮНЕСКО 12</li>
         <li>Объектов культурного наследия ЮНЕСКО 16</li>
         <li>Природных заповедников 105</li>
-        <li>Аэропортов 241</li>      </ul>
+        <li>Аэропортов 241</li>
+      </ul>
     </section>
-    <!--TODO add alts-->
+
     <section class="photo-grid">
       <ul class="photo-grid__container">
-        <li><img class="photo-grid__item" src="./images/photo-grid-train.png"></li>
-        <li><img class="photo-grid__item" src="./images/photo-grid-atharva-tulsi.png"></li>
-        <li><img class="photo-grid__item" src="./images/photo-grid-tuman.png"></li>
-        <li><img class="photo-grid__item" src="./images/photo-grid-sochi.png"></li>
-        <li><img class="photo-grid__item" src="./images/photo-grid-arisa.png"></li>
-        <li><img class="photo-grid__item" src="./images/photo-grid-baikal.png"></li>
-        <li><img class="photo-grid__item" src="./images/photo-grid-elbrus.png"></li>
-        <li><img class="photo-grid__item" src="./images/photo-grid-kondratiev.png"></li>
-        <li><img class="photo-grid__item" src="./images/photo-grid-kamchatka-1.png"></li>
-        <li><img class="photo-grid__item" src="./images/photo-grid-kamchatka-2.png"></li>
-        <li><img class="photo-grid__item" src="./images/photo-grid-baikal-2.png"></li>
-        <li><img class="photo-grid__item" src="./images/photo-grid-ergaki.png"></li>
+        <li><img class="photo-grid__item" src="./images/photo-grid-train.png" alt="поезд окно"></li>
+        <li><img class="photo-grid__item" src="./images/photo-grid-atharva-tulsi.png" alt="горы облака"></li>
+        <li><img class="photo-grid__item" src="./images/photo-grid-tuman.png" alt="утро туман собака стога сена"></li>
+        <li><img class="photo-grid__item" src="./images/photo-grid-sochi.png" alt="лес туман"></li>
+        <li><img class="photo-grid__item" src="./images/photo-grid-arisa.png" alt="лед колесо машина"></li>
+        <li><img class="photo-grid__item" src="./images/photo-grid-baikal.png" alt="берег моря горы вдали"></li>
+        <li><img class="photo-grid__item" src="./images/photo-grid-elbrus.png" alt=" горы заснеженны шапки"></li>
+        <li><img class="photo-grid__item" src="./images/photo-grid-kondratiev.png" alt="волнолом знак перехода"></li>
+        <li><img class="photo-grid__item" src="./images/photo-grid-kamchatka-1.png" alt="виды камчатка"></li>
+        <li><img class="photo-grid__item" src="./images/photo-grid-kamchatka-2.png" alt="виды камчатка"></li>
+        <li><img class="photo-grid__item" src="./images/photo-grid-baikal-2.png" alt="берег байкала скалы"></li>
+        <li><img class="photo-grid__item" src="./images/photo-grid-ergaki.png" alt="ергаки туман"></li>
       </ul>
     </section>
     <!--TODO add alt and link-->
@@ -70,9 +73,9 @@
         <h2 class="place__title">Куршская коса</h2>
         <div class="place__website">
           <h3 class="place__url-heading">URL</h3>
-          <a href="#" class="place__link">park-kosa.ru</a>
+          <a href="http://park-kosa.ru" class="place__link link" target="_blank" rel="noopener">park-kosa.ru</a>
         </div>
-        <img class="place__image" src="./images/place-kosa.jpg">
+        <img class="place__image" src="./images/place-kosa.jpg" alt="куршский залив">
         <div>
           <p class="place__paragraph">Здесь, посреди лесов и песчаных дюн, вы сможете увидеть два водных горизонта —
             спокойного Куршского залива с одной стороны и подёрнутого рябью волн Балтийского моря с другой. Уникальная
@@ -89,9 +92,9 @@
         <h2 class="place__title">Кольский</h2>
         <div class="place__website">
           <h3 class="place__url-heading">URL</h3>
-          <a href="#" class="place__link">National Geographic</a>
+          <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" class="place__link link" target="_blank" rel="noopener">National Geographic</a>
         </div>
-        <img class="place__image" src="./images/place-kolsky.jpg">
+        <img class="place__image" src="./images/place-kolsky.jpg" alt="кольский полуостров скалы берег снег">
         <div>
           <p class="place__paragraph">Почти весь полуостров находится за Полярным кругом. Саамская тундра, от которой на
             юг — тайга, а на север — Ледовитый океан, прикидывающийся Баренцевым морем.</p>
@@ -107,9 +110,9 @@
         <h2 class="place__title">Алтай</h2>
         <div class="place__website">
           <h3 class="place__url-heading">URL</h3>
-          <a href="#" class="place__link">Facebook</a>
+          <a href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822" class="place__link link" target="_blank" rel="noopener">Facebook</a>
         </div>
-        <img class="place__image" src="./images/place-altai.jpg">
+        <img class="place__image" src="./images/place-altai.jpg" alt="алтай мост зелень ноутбук">
         <div>
           <p class="place__paragraph">Алтай — одно из красивейших мест в России.
             В первую очередь из-за гор: если ехать вдоль хребта, вы увидите склоны, усыпанные соснами, горные реки и
@@ -126,9 +129,10 @@
         <h2 class="place__title">Зимний Байкал</h2>
         <div class="place__website">
           <h3 class="place__url-heading">URL</h3>
-          <a href="#" class="place__link">https://vk.com/baikalmile</a>
+          <a href="https://vk.com/baikalmile" class="place__link link" target="_blank" rel="noopener">https://vk.com/baikalmile</a>
         </div>
-        <img class="place__image" src="./images/place-winter-baikal.jpg">
+        <img class="place__image" src="./images/place-winter-baikal.jpg"
+             alt="прозрачны лед крупным планом трещины в толще подсвеченные солнцем">
         <div>
           <p class="place__paragraph">Всем известен Байкал как крупнейшее озеро
             в мире. Многие также знают, что это самый большой источник пресной воды и одно из красивейших мест в
@@ -145,9 +149,9 @@
         <h2 class="place__title">Карелия</h2>
         <div class="place__website">
           <h3 class="place__url-heading">URL</h3>
-          <a href="#" class="place__link">http://vodlozero.ru/</a>
+          <a href="http://vodlozero.ru" class="place__link link" target="_blank" rel="noopener">http://vodlozero.ru/</a>
         </div>
-        <img class="place__image" src="./images/place-karelia.jpg">
+        <img class="place__image" src="./images/place-karelia.jpg" alt="карелия река лес">
         <div>
           <p class="place__paragraph">Сибирь заканчивается не на Урале, а в Карелии: образующая тайгу сибирская
             лиственница не растёт западнее Водлозера. Зато здесь она вымахивает на 30 метров — леса карельских
@@ -160,7 +164,7 @@
     </section>
     <!--TODO add hover overlay-->
     <section class="cover">
-      <a class="cover__link" href="#">
+      <a class="cover__link" href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank" rel="noopener">
         <div class="cover__wrapper">
           <h2 class="cover__title">До Байкала «на собаках»</h2>
           <p class="cover__subtitle">По мотивам учебной темы о Транссибе — путешествие от столицы до Байкала на
@@ -171,13 +175,13 @@
 
     <footer class="footer">
       <ul class="footer__links">
-        <li class="footer__link-wrapper"><a class="footer__link" href="#">Карты</a></li>
-        <li class="footer__link-wrapper"><a class="footer__link" href="#">Погода</a></li>
-        <li class="footer__link-wrapper"><a class="footer__link" href="#">Расписание</a></li>
-        <li class="footer__link-wrapper"><a class="footer__link" href="#">Календарь</a></li>
-        <li class="footer__link-wrapper"><a class="footer__link" href="#">Путешествия</a></li>
+        <li class="footer__link-wrapper"><a class="footer__link link" href="https://yandex.ru/maps" target="_blank" rel="noopener">Карты</a></li>
+        <li class="footer__link-wrapper"><a class="footer__link link" href="https://yandex.ru/pogoda" target="_blank" rel="noopener">Погода</a></li>
+        <li class="footer__link-wrapper"><a class="footer__link link" href="https://rasp.yandex.ru" target="_blank" rel="noopener">Расписание</a></li>
+        <li class="footer__link-wrapper"><a class="footer__link link" href="https://calendar.yandex.ru" target="_blank" rel="noopener">Календарь</a></li>
+        <li class="footer__link-wrapper"><a class="footer__link link" href="https://travel.yandex.ru" target="_blank" rel="noopener">Путешествия</a></li>
       </ul>
-      <p class="footer__copyright">© 2020 Alexandr M.</p>
+      <p class="footer__copyright">© 2021 Alexandr M.</p>
     </footer>
 
   </main>
