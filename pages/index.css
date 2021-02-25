@@ -1,7 +1,7 @@
-/*@import "../blocks/debug/debug.css";*/
 @import "../vendor/normalize.css";
-@import "../blocks/fonts/fonts.css";
+@import "../vendor/fonts/fonts.css";
 @import "../blocks/body/body.css";
+@import "../vendor/variables.css";
 @import "../blocks/page/page.css";
 /*---------------------header------------------------*/
 @import "../blocks/header/header.css";
@@ -23,6 +23,7 @@
 @import "../blocks/intro/__title/intro__title.css";
 @import "../blocks/intro/__text/intro__text.css";
 @import "../blocks/intro/__list/intro__list.css";
+@import "../blocks/intro/__accent/intro__accent.css";
 /*---------------photo-grid------------------------------*/
 @import "../blocks/photo-grid/photo-grid.css";
 @import "../blocks/photo-grid/__container/photo-grid__container.css";

@@ -7,7 +7,7 @@
 @media screen and (max-width: 1279px){
   .cover {
     min-width: calc(100% + var(--width_offset_1279) + var(--width_offset_1279));
-    left: calc(0px - var(--width_offset_1279));
+    right: var(--width_offset_1279);
   }
 }
 
@@ -15,7 +15,7 @@
   .cover {
     margin: 90px auto 0 auto;
     min-width: calc(100% + var(--width_offset_1023) + var(--width_offset_1023));
-    left: calc(0px - var(--width_offset_1023));
+    right: var(--width_offset_1023);
   }
 }
 
@@ -23,6 +23,6 @@
   .cover {
     margin: 66px auto 0 auto;
     min-width: calc(100% + var(--width_offset_767) + var(--width_offset_767));
-    left: calc(0px - var(--width_offset_767));
+    right: var(--width_offset_767);
   }
 }

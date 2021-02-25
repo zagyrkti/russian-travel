@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Russian travel</title>
+  <title>Путешествия по России</title>
   <link rel="stylesheet" href="./pages/index.css">
 </head>
 
@@ -11,9 +11,12 @@
 <div class="page">
   <header class="header">
     <a href="#" class="header__logo link" target="_self" rel="noopener"></a>
-    <nav class="header__lang">
-    <a href="#" class="header__lang-link header__lang-link_active link" target="_self" rel="noopener">Ru</a>
-    <a href="#" class="header__lang-link link" target="_self" rel="noopener">En</a>
+    <nav>
+      <ul class="header__lang">
+        <li><a href="#" class="header__lang-link header__lang-link_active link" target="_self" rel="noopener">Ru</a>
+        </li>
+        <li><a href="#" class="header__lang-link link" target="_self" rel="noopener">En</a></li>
+      </ul>
     </nav>
   </header>
   <main>
@@ -23,6 +26,9 @@
       <figure class="lead__figure">
         <div class="lead__image-combinator">
           <img src="./images/lead-way.svg" alt="путь" class="lead__overlay">
+          <!--изначально импортировал одним файлом но потом заметил что качество пути и названия городов-->
+          <!--деградируют до нечитаемого\неприличного для главной уровня, в диапазоне 320-666px-->
+          <!--перфекционизмом не страдаю но пришлось делать наложением так как такое качество исполнения несерьезно для главного изображения страницы-->
           <img src="./images/lead-polka.jpg" alt="поезд боковушка окно цистерны" class="lead__image">
         </div>
         <figcaption class="lead__caption">ваша полка — верхняя</figcaption>
@@ -31,7 +37,7 @@
 
     <section class="intro">
       <h2 class="intro__title">Чего мы там не видели?</h2>
-      <article class="intro__text">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только 36% планируют
+      <p class="intro__text">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только 36% планируют
         провести отпуск в родной стране. Мол, чего мы тут, дома, не видели? На самом деле, Россия — это целая вселенная
         с
         ласковым морем юга, густыми лесами Саян и суровыми льдами плато Путорана. А ещё увидеть все эти красоты можно
@@ -40,13 +46,13 @@
         мама,
         которая взяла в охапку троих детей, усадила их в свою «Ладу» и проехала 20 тысяч километров по родной стране. Мы
         выбрали и описали некоторые интересные места, достойные вашего отпуска.
-      </article>
+      </p>
       <ul class="intro__list">
-        <li>Часовых поясов 11</li>
-        <li>Объектов природного наследия ЮНЕСКО 12</li>
-        <li>Объектов культурного наследия ЮНЕСКО 16</li>
-        <li>Природных заповедников 105</li>
-        <li>Аэропортов 241</li>
+        <li><span class="intro__accent">Часовых поясов</span> 11</li>
+        <li><span class="intro__accent">Объектов природного наследия ЮНЕСКО</span> 12</li>
+        <li><span class="intro__accent">Объектов культурного наследия ЮНЕСКО</span> 16</li>
+        <li><span class="intro__accent">Природных заповедников 105</span></li>
+        <li><span class="intro__accent">Аэропортов 241</span></li>
       </ul>
     </section>
 
@@ -71,7 +77,7 @@
       <article class="place">
         <h2 class="place__title">Куршская коса</h2>
         <div class="place__website">
-          <h3 class="place__url-heading">URL</h3>
+          <h3 class="place__url-heading">url</h3>
           <a href="http://park-kosa.ru" class="place__link link" target="_blank" rel="noopener">park-kosa.ru</a>
         </div>
         <img class="place__image" src="./images/place-kosa.jpg" alt="куршский залив">
@@ -90,8 +96,9 @@
       <article class="place">
         <h2 class="place__title">Кольский</h2>
         <div class="place__website">
-          <h3 class="place__url-heading">URL</h3>
-          <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" class="place__link link" target="_blank" rel="noopener">National Geographic</a>
+          <h3 class="place__url-heading">url</h3>
+          <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" class="place__link link"
+             target="_blank" rel="noopener">National Geographic</a>
         </div>
         <img class="place__image" src="./images/place-kolsky.jpg" alt="кольский полуостров скалы берег снег">
         <div>
@@ -108,8 +115,9 @@
       <article class="place">
         <h2 class="place__title">Алтай</h2>
         <div class="place__website">
-          <h3 class="place__url-heading">URL</h3>
-          <a href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822" class="place__link link" target="_blank" rel="noopener">Facebook</a>
+          <h3 class="place__url-heading">url</h3>
+          <a href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822" class="place__link link"
+             target="_blank" rel="noopener">Facebook</a>
         </div>
         <img class="place__image" src="./images/place-altai.jpg" alt="алтай мост зелень ноутбук">
         <div>
@@ -127,7 +135,7 @@
       <article class="place">
         <h2 class="place__title">Зимний Байкал</h2>
         <div class="place__website">
-          <h3 class="place__url-heading">URL</h3>
+          <h3 class="place__url-heading">url</h3>
           <a href="https://vk.com/baikalmile" class="place__link link" target="_blank" rel="noopener">https://vk.com/baikalmile</a>
         </div>
         <img class="place__image" src="./images/place-winter-baikal.jpg"
@@ -147,7 +155,7 @@
       <article class="place">
         <h2 class="place__title">Карелия</h2>
         <div class="place__website">
-          <h3 class="place__url-heading">URL</h3>
+          <h3 class="place__url-heading">url</h3>
           <a href="http://vodlozero.ru" class="place__link link" target="_blank" rel="noopener">http://vodlozero.ru/</a>
         </div>
         <img class="place__image" src="./images/place-karelia.jpg" alt="карелия река лес">
@@ -164,26 +172,32 @@
 
     <section class="cover">
       <a class="cover__link" href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank" rel="noopener">
-        <div class="cover__wrapper">
+        <div class="cover__wrapper"> <!--создает новый stacking context для избегания заморочек с z-index-->
           <h2 class="cover__title">До Байкала «на собаках»</h2>
           <p class="cover__subtitle">По мотивам учебной темы о Транссибе — путешествие от столицы до Байкала на
             электричках.</p>
         </div>
       </a>
     </section>
-
-    <footer class="footer">
-      <ul class="footer__links">
-        <li class="footer__link-wrapper"><a class="footer__link link" href="https://yandex.ru/maps" target="_blank" rel="noopener">Карты</a></li>
-        <li class="footer__link-wrapper"><a class="footer__link link" href="https://yandex.ru/pogoda" target="_blank" rel="noopener">Погода</a></li>
-        <li class="footer__link-wrapper"><a class="footer__link link" href="https://rasp.yandex.ru" target="_blank" rel="noopener">Расписание</a></li>
-        <li class="footer__link-wrapper"><a class="footer__link link" href="https://calendar.yandex.ru" target="_blank" rel="noopener">Календарь</a></li>
-        <li class="footer__link-wrapper"><a class="footer__link link" href="https://travel.yandex.ru" target="_blank" rel="noopener">Путешествия</a></li>
-      </ul>
-      <p class="footer__copyright">© 2021 Alexandr M.</p>
-    </footer>
-
   </main>
+
+  <footer class="footer">
+    <nav>
+      <ul class="footer__links">
+        <li class="footer__link-wrapper"><a class="footer__link link" href="https://yandex.ru/maps" target="_blank"
+                                            rel="noopener">Карты</a></li>
+        <li class="footer__link-wrapper"><a class="footer__link link" href="https://yandex.ru/pogoda" target="_blank"
+                                            rel="noopener">Погода</a></li>
+        <li class="footer__link-wrapper"><a class="footer__link link" href="https://rasp.yandex.ru" target="_blank"
+                                            rel="noopener">Расписание</a></li>
+        <li class="footer__link-wrapper"><a class="footer__link link" href="https://calendar.yandex.ru"
+                                            target="_blank" rel="noopener">Календарь</a></li>
+        <li class="footer__link-wrapper"><a class="footer__link link" href="https://travel.yandex.ru" target="_blank"
+                                            rel="noopener">Путешествия</a></li>
+      </ul>
+    </nav>
+    <p class="footer__copyright">&copy; 2021 Alexandr M.</p>
+  </footer>
 </div>
 </body>
 </html>

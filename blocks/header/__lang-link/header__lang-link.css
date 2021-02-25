@@ -1,6 +1,7 @@
 .header__lang-link {
   margin: 18px 0 0 18px;
 
+  display: inline-block;
   color: #FFFFFF;
   text-decoration: none;
   font-size: 24px;
