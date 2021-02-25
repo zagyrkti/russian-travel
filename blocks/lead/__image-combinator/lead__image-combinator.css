@@ -1,0 +1,17 @@
+.lead__image-combinator {
+  position: relative;
+}
+
+@media screen and (max-width: 1023px){
+  .lead__image-combinator {
+    min-width: calc(100% + var(--width_offset_1023) + var(--width_offset_1023));
+    left: calc(0px - var(--width_offset_1023));
+  }
+}
+
+@media screen and (max-width: 767px){
+  .lead__image-combinator {
+    min-width: calc(100% + var(--width_offset_767) + var(--width_offset_767));
+    left: calc(0px - var(--width_offset_767));
+  }
+}

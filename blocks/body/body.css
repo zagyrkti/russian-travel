@@ -1,0 +1,9 @@
+.body {
+  background-color: #2A2C2F;
+  color: #FFFFFF;
+  font-family: Inter, Arial, sans-serif;
+  word-break: break-word;
+  --width_offset_1023: 24px;
+  --width_offset_767: 16px;
+  --width_offset_1279: 48px;
+}
