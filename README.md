@@ -2,6 +2,7 @@
 
 
 Tech: HTML, CSS
+
 Purpose: Training project for GRID, @media, Flex, Figma, Responsive layout 
 
 
