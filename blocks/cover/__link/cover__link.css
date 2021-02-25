@@ -11,6 +11,7 @@
   background-position: center;
   color: #FFFFFF;
   text-decoration: none;
+
 }
 
 .cover__link::before {
@@ -20,11 +21,12 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(42, 44, 47, 0.3)
+  transition: background-color 0.9s ease;
+  background-color: rgba(42, 44, 47, 0.3);
 }
 
 .cover__link:hover:before{
-  background-color: rgba(42, 44, 47, 0.8)
+  background-color: rgba(42, 44, 47, 0.8);
 }
 
 @media screen and (max-width: 1279px){
