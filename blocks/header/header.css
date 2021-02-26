@@ -1,14 +1,24 @@
 .header {
   max-width: 1184px;
   min-height: 52px;
+  padding: 0 var(--width_offset_1279) 0 var(--width_offset_1279);
 
   display: flex;
   justify-content: flex-end;
 }
 
+@media screen and (max-width: 1023px){
+  .header {
+    padding: 0 var(--width_offset_1023) 0 var(--width_offset_1023);
+  }
+}
+
 @media screen and (max-width: 767px){
   .header {
+    padding: 0 var(--width_offset_767) 0 var(--width_offset_767);
+
     font-size: 40px;
     min-height: 42px;
   }
 }
+

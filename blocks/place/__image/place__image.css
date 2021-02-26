@@ -1,14 +1,4 @@
 .place__image {
   width: 100%;
-  position: relative; /*необходим для разворота изображения на всю ширину экрана*/
-}                     /*метод показывал наставник в вебинаре по адаптивной верстке*/
-                      /*альтернативой будет только transform: translate(-16px, 0) или margin: -16px*/
-                      /*absolute не применить*/
-                      /*других вариантов преодолеть внутренние паддинги от page не знаю/искал не нашел*/
-
-@media screen and (max-width: 767px){
-  .place__image {
-    min-width: calc(100% + var(--width_offset_767) + var(--width_offset_767));
-    right: var(--width_offset_767);
-  }
 }
+

@@ -11,6 +11,12 @@
   }
 }
 
+@media screen and (max-width: 767px){
+  .place__paragraph {
+    padding: 0 var(--width_offset_767) 0 var(--width_offset_767);
+  }
+}
+
 .place__paragraph:last-child {
   margin: 0;
 }
